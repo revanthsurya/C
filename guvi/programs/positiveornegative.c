@@ -7,9 +7,13 @@ if(a>0)
 {
 printf("positve");
 }
-else
+else if(a<0)
 {
 printf("negative");
+}
+else
+{
+printf("invalid");
 }
 return 0;
 }
