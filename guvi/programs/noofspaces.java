@@ -7,7 +7,7 @@ class Ideone
 	{
 		Scanner sc=new Scanner(System.in);
 		String str=sc.nextLine();
-		int len=str.split(" ").length;
-	            System.out.println(len-1);
+		int l=str.split(" ").length;
+	            System.out.println(l-1);
 	}
 }
