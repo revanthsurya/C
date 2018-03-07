@@ -1,16 +1,24 @@
 #include <stdio.h>
 int main(void) {
-	int n,exp;
-	long result=1;
-	printf("Enter the number:\n");
-	scanf("%d",&n);
-	printf("Enter the exponent:\n");
-	scanf("%d",&exp);
-    while(exp!=0)
-    {
-    	result*=n;
-    	--exp;
-    }
-    printf("Power of number is:%d\n",result);
+int n,temp,reverse=0;
+scanf("%d",&n);
+temp=n;
+while(n!=0)
+{
+	reverse=reverse*10;
+            reverse+=n%10;
+            n=n/10;
+	
+}
+if(temp==reverse)
+{
+	printf("The number is a palindrome.\n");
+}
+else
+{
+	printf("\n The number is not a palindrome.");
+}
+
+   
 	return 0;
 }
